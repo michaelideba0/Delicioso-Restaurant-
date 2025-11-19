@@ -1,0 +1,243 @@
+/* --------------------------- */
+/* Global Styles               */
+/* --------------------------- */
+body {
+  margin: 0;
+  font-family: 'Poppins', Arial, sans-serif;
+  background-color: #FFF8E7;   /* warm cream */
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+h2, h3, h4 {
+  letter-spacing: 0.5px;
+}
+
+/* Smooth fade-in for sections */
+section {
+  animation: fadeIn 0.8s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* --------------------------- */
+/* Header                      */
+/* --------------------------- */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #b71c1c, #d32f2f);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.9rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.menu-icon {
+  font-size: 2.2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menu-icon:hover {
+  transform: scale(1.1);
+}
+
+/* --------------------------- */
+/* Sidebar Menu                */
+/* --------------------------- */
+#sideMenu {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100%;
+  background: linear-gradient(#b71c1c, #c62828);
+  padding-top: 6rem;
+  transition: 0.4s ease;
+  z-index: 999;
+  box-shadow: -4px 0 12px rgba(0,0,0,0.3);
+}
+
+#sideMenu ul li a {
+  padding: 1.1rem 2rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+#sideMenu ul li a:hover {
+  background-color: rgba(255,255,255,0.15);
+  backdrop-filter: blur(3px);
+}
+
+/* --------------------------- */
+/* Hero Section                */
+/* --------------------------- */
+.hero {
+  text-align: center;
+  padding: 10rem 2rem 6rem;
+  background: url('your-image.jpg') center/cover no-repeat;
+  color: #fff;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+.hero * {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+
+/* --------------------------- */
+/* Menu Section                */
+/* --------------------------- */
+.menu-section {
+  padding: 4rem 2rem;
+  background-color: #FFF3D9;
+}
+
+.menu-section h2 {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 2.5rem;
+  color: #c62828;
+  font-weight: 700;
+}
+
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.7rem;
+  justify-content: center;
+}
+
+.menu-items .item {
+  background: #fff;
+  padding: 1.2rem;
+  border-radius: 14px;
+  box-shadow: 0px 8px 25px rgba(0,0,0,0.12);
+  text-align: center;
+  width: 190px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-items .item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 12px 30px rgba(0,0,0,0.18);
+}
+
+.menu-items .item img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.menu-items .item img:hover {
+  transform: scale(1.05);
+}
+
+.menu-items .item h4 {
+  margin: 0.5rem 0;
+  color: #c62828;
+  font-size: 1.15rem;
+  font-weight: bold;
+}
+
+/* --------------------------- */
+/* Reviews Section             */
+/* --------------------------- */
+.reviews-section {
+  padding: 4rem 2rem;
+  background: #FFF3D9;
+}
+
+.reviews-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #c62828;
+  font-size: 2.4rem;
+}
+
+.review {
+  background: #ffffff;
+  padding: 1.7rem;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  margin: 1.5rem auto;
+  max-width: 550px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.review p {
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+/* --------------------------- */
+/* Contact Section             */
+/* --------------------------- */
+.contact-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #FFF8E7;
+}
+
+.contact-section h2 {
+  font-size: 2.3rem;
+  color: #c62828;
+}
+
+.contact-section p {
+  font-size: 1.1rem;
+}
+
+/* --------------------------- */
+/* Footer                      */
+/* --------------------------- */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(90deg, #c62828, #b71c1c);
+  color: #fff;
+  font-size: 1.1rem;
+}
