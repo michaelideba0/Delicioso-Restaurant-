@@ -3,7 +3,7 @@
 This is a modern, professional, and fully responsive restaurant website designed to showcase the menu, dishes, pizzas, drinks, customer reviews, and contact information. The website features a slide menu, hero image slideshow, scroll animations, and interactive effects.
 
 ## 🚀 Live Demo
-👉 .[live demo](https://michaelideba0.github.io/Delicioso-Restaurant/)
+👉 [live demo](https://michaelideba0.github.io/Delicioso-Restaurant-/)
 
 
 ---
